@@ -1,3 +1,5 @@
+#**AI-Odyssey-Labs**
+---
 # Pre-training NanoGPT with Different Positional Encodings
 
 This project explores the impact of various positional encoding techniques on the performance of a small-scale GPT-2 model (NanoGPT, ~16.03M parameters) when pre-trained on a subset of the OpenWebText dataset.
