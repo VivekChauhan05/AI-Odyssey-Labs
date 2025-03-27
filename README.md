@@ -19,7 +19,7 @@ The goal is to analyze how these different approaches affect the model's ability
 * **Model:** NanoGPT (approximately 16.03 million parameters)
 * **Training Data:** 10% of the OpenWebText dataset (~900M tokens)
 * **Validation Data:** 0.1% of the OpenWebText dataset (~9M tokens)
-* **Training Ratio:** Trained on approximately 56x the model size (900M tokens / 16.03M parameters). While the Chinchilla paper suggests training on 20x the model size, this experiment explores the effect of a higher training ratio on this smaller model.
+* **Training Ratio:** Trained on approximately ~56x the model size (~900M tokens / ~16.03M parameters). While the Chinchilla paper suggests training on 20x the model size, this experiment explores the effect of a higher training ratio on this smaller model.
 * **Precision:** Used fp16 precision for training. bfloat16 could potentially offer better performance but was not available due to hardware limitations.
 * **Optimization:** Utilized Flash Attention for improved training efficiency.
 * **Compilation:** Employed `model.compile()`. While its impact is more pronounced for larger models, it was included in the training pipeline.
